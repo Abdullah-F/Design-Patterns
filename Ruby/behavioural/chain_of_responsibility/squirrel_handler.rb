@@ -1,0 +1,13 @@
+require('./abstract_handler.rb')
+class SquirrelHandler < AbstractHandler
+  # @param [String] request
+  #
+  # @return [String, nil]
+  def handle(request)
+    if request == 'Nut'
+      "Squirrel: I'll eat the #{request}"
+    else
+      super(request)
+    end
+  end
+end
